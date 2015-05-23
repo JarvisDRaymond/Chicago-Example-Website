@@ -1,0 +1,300 @@
+/* RESETS */
+a, abbr, acronym, address, applet, article, aside, audio,
+b, blockquote, big, body,
+center, canvas, caption, cite, code, command,
+datalist, dd, del, details, dfn, dl, div, dt, 
+em, embed,
+fieldset, figcaption, figure, font, footer, form, 
+h1, h2, h3, h4, h5, h6, header, hgroup, html,
+i, iframe, img, ins,
+kbd, 
+keygen,
+label, legend, li, 
+meter,
+nav,
+object, ol, output,
+p, pre, progress,
+q, 
+s, samp, section, small, span, source, strike, strong, sub, sup,
+table, tbody, tfoot, thead, th, tr, tdvideo, tt,
+u, ul, 
+var{
+    background: transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline; }
+.hide {display: none;}
+
+/* CITY OF CHICAGO CUSTOM STYLES */
+/* Navigation Styles */
+.navbar { 
+	width: 100%; 
+	background-color: black; 
+	height: 50px; 	
+	position: fixed;
+	opacity: .8;
+}
+nav {
+	margin: 10px auto; 
+	text-align:center;
+}
+nav ul{
+	list-style: none;
+}
+nav li{
+	display:inline;
+	padding-right: 10%;
+}
+nav li a { 
+	color: #dcdcdc;
+	font-family: 'Tahoma';
+	font-size: 1.2em; 
+	text-decoration: none;
+	padding-bottom: 15px;
+}
+nav li a:hover {
+	color: #fff;
+	border-bottom:3px solid red;
+}
+#logo {
+	color:red;
+	font-weight: bold;
+}
+/*STYLES FOR MARQUEE*/
+.marquee-wrapper{
+	background-image: url('../img/default.jpg');
+	background-color:black;
+	background-repeat: no-repeat;
+	height:100vh;	
+	width:100%;
+}	
+.marquee-callout, .business-callout {
+	margin:15% 0 0 30px;
+	float:left;
+}
+h1, .marquee-wrapper h2 {
+	color:#fff;
+    font-size:2em;
+	padding-bottom: 25px;
+}
+hr {
+	width:50%;
+	border-color:red;
+	float:left;
+	margin-bottom: 25px;
+}
+.subtitle{
+	font-size:1em;
+	color:lightgrey;
+	clear:both;
+}
+.marquee-wrapper ul {
+	float:right;
+	text-align: right;
+	color:#dcdcdc;
+	opacity:1;
+	margin:15% 30px auto 0;
+	padding-bottom:0%;
+	padding-right:10px;
+	list-style: none;
+}
+.marquee-wrapper li {
+	padding:7px;
+	font-size: 1.1em;
+}
+.marquee-wrapper li:hover {
+	padding-right:0px;	
+	color:#fff;
+	font-weight:bold;
+}
+.marquee-wrapper li:hover::after {
+    content: '–';
+    margin-left:15px;
+    color:red;
+    font-weight: bold;
+    font-size:1.6em;
+}
+
+.learn-more {
+	clear:both;	
+	border-radius:50%;
+	text-align: center;
+	border:1px solid #fff;
+	width:30px;
+	height:30px;
+	padding:10px;
+	font-size:.8em;
+	margin: 0 auto 0 auto;
+}
+.learn-more a {
+	text-decoration: none; color:#fff;
+}
+.learn-more a:hover {
+	color:red;
+}
+/* STYLES FOR ARTICLES */
+.threeup {
+  width:90%;
+  margin: 0 auto 80px auto;
+}
+.threeup article {
+	float:left;
+	margin: 50px 30px 30px 0;
+	width: 28%;
+}
+.news-headline {
+	border-bottom: 1px solid #ccc; padding-bottom:15px;
+	margin:15px 0 15px 0; 
+	width: 320px; 
+}
+article video {
+	background-color:black;
+}
+footer {
+	clear:both;
+	width:100%;
+	height:56px;
+	background-color: black;
+	color:#ccc;
+	font-size:.7em;
+	padding: 10px 0 0 5%;
+	font-family:verdana,sans-serif;
+	opacity: .9;
+}
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN*/
+/*Tablets, Phablets, Netbooks etc*/
+@media screen and (max-width: 1200px) 	{
+	.threeup article, video, img {
+	  height:75%;	
+      width:75%;
+	}
+	video{
+		min-height: 280px;
+	}
+	.news-headline {
+		border:none;	
+	}		
+	/*Mobile Friendly Nav Styles*/
+	#mobileNav {
+		display: initial;
+	}
+	nav {
+		display: none;
+	}
+	header {
+  		width: 100%;
+	 	background: black;
+  		height: 50px;
+ 	    line-height: 50px;
+	}
+	.mobileLogo {
+		color:red;
+		font-weight: bold;
+		margin-left:40%;
+		margin-right: 50%;
+		font-size:1.4em;
+		text-decoration: none;
+	}
+	.mobileLogo a {
+		color:red;
+		text-decoration: none;
+	}
+	.hamburger {
+  		background: none;
+  		position: absolute;
+  		top: 0;
+  		right: 0;
+  		line-height: 45px;
+		padding: 0px 15px 0px 15px;
+ 		color: #fff;
+  		border: 0;
+  		font-size: 1.3em;
+  		font-weight: bold;
+  		cursor: pointer;
+  		outline: none;
+  		z-index: 1;
+	}
+	.cross {
+  		background: none;
+  		position: absolute;
+  		top: 0px;
+  		right: 0;
+  		padding: 0 15px 0 15px;
+  		color: #fff;
+  		border: 0;
+  		font-size: 3em;
+  		line-height: 65px;
+  		font-weight: bold;
+  		cursor: pointer;
+  		outline: none;
+  		z-index: 1;
+		}
+	.menu {
+  		z-index: 1;
+  		font-weight: bold;
+ 		font-size: 0.8em;
+ 		width: 100%;
+		background: black;
+  	    position: absolute;
+  		text-align: center;
+  		padding-bottom:10px;
+		}
+	.menu ul {
+  		margin: 0;
+  		padding: 0;
+  		list-style-type: none;
+  		list-style-image: none;
+  		float: right
+		}
+	.menu li {
+  		display: block;
+  		padding: 25px 10px 15px 0;
+		}
+	.menu li:hover {
+  		display: block;
+  		border-bottom: red 3px solid;
+		}
+	.menu ul li a {
+  		text-decoration: none;
+  		float: right;
+  		margin: 0;
+		color: #fff;
+		}
+	.menu ul li a:hover {
+  		color: #fff;
+  		text-decoration: none;
+		}
+	.menu a {
+  		text-decoration: none;
+  		color: white;
+		}
+}
+/*Phones and so forth*/
+@media screen and (max-width: 600px) 	{
+	.marquee-wrapper {
+		display:none;
+	}
+	#news-wrapper{
+		padding-top:50px;
+		padding-right:20px;
+	}
+	.threeup {
+		padding:0;
+	}
+	.threeup article {
+		float:none;
+		margin: 0 20px 20px 20px;
+		width: 100%;
+		padding-top:10%;
+	}
+}
+/* Rzr Phones, Smart Watches and other tiny devices*/
+@media screen and (max-width: 250px) 	{
+	.mobileLogo {
+		display: none;
+	}
+}
+
+
