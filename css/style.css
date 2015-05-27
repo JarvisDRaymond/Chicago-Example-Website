@@ -66,6 +66,7 @@ nav li a:hover {
 .marquee-wrapper{
 	background-image: url('../img/default.jpg');
 	background-color:black;
+	background-size:cover;
 	background-repeat: no-repeat;
 	height:100vh;	
 	width:100%;
