@@ -79,6 +79,7 @@ h1, .marquee-wrapper h2 {
 	color:#fff;
         font-size:2em;
         font-family: 'Lora', serif;
+        font-weight:normal;
 	padding-bottom: 25px;
 }
 hr {
@@ -118,7 +119,6 @@ hr {
     font-weight: bold;
     font-size:1.6em;
 }
-
 .learn-more {
 	clear:both;	
 	border-radius:50%;
