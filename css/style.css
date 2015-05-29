@@ -77,7 +77,8 @@ nav li a:hover {
 }
 h1, .marquee-wrapper h2 {
 	color:#fff;
-    font-size:2em;
+        font-size:2em;
+        font-family: 'Oldenburg', cursive;
 	padding-bottom: 25px;
 }
 hr {
