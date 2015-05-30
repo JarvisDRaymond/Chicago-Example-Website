@@ -1,4 +1,16 @@
 //SWAPS OUT BCK GRND IMAGE
+//Michael Solution - Far less code
+$('#list > li').click(function(){
+  $('.marquee-wrapper').css('background-image','url("img/'+ this.id + '.jpg")');
+  $('.marquee-callout').hide();
+  $('#' + this.id + '-copy').show();
+});
+
+
+
+//Jarvis Soluton - uses event listener on every item
+/*
+//SWAPS OUT BCK GRND IMAGE
 //BUSINESS ANIMATION
 $('#business').click(function(){
   $('.marquee-wrapper').css('background-image','url("img/business.jpg")');
@@ -51,6 +63,8 @@ $('#health').click(function(){
   $('#default,#business-copy,#culture-copy,#environment-copy,#housing-copy,#social-copy,#civic-copy,#education-copy').css("display","none");
   $('#health-copy').css("display","initial");
   });
+*/  
+  
 //MOBILE DROPDOWN
 $(".cross").hide();
 $(".menu").hide();
